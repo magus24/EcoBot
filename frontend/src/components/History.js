@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../table.css";
 import "../navbar.css";
 import searchicon from "../img/icons8-search-100.png";
