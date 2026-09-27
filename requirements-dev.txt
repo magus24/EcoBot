@@ -1,0 +1,4 @@
+-r requirements.txt
+
+# Тесты
+pytest>=8.0

@@ -1,0 +1,14 @@
+# ── Детектор (detector/) ─────────────────────────────────────────────────────
+# ultralytics тянет за собой torch/torchvision, но фиксируем явно:
+torch>=2.0
+torchvision>=0.15
+ultralytics>=8.0
+opencv-python>=4.8
+pandas>=2.0          # .pandas().xyxy в detector/main.py
+pyserial>=3.5        # отправка координат на робот-манипулятор (см. send_to_robot)
+
+# ── API (backend/) ───────────────────────────────────────────────────────────
+flask>=3.0
+flask-cors>=4.0
+werkzeug>=3.0        # хеширование паролей (werkzeug.security)
+itsdangerous>=2.1    # подпись токенов (идёт вместе с Flask, указан явно)
